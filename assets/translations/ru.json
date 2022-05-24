@@ -1,0 +1,48 @@
+{
+  "translation": {
+    "T_ADD_TO_DEVICE": "Добавить на устройство:",
+    "T_ADD_TO_LIBRARY": "Добавить в бибилиотеку",
+    "T_AVAILABLE_VIDEOS": "Доступные видео",
+    "T_DELETE": "Удалить",
+    "T_DESCRIPTION": "Описание",
+    "T_DEVICES": "Устройства",
+    "T_DEVICES_WITH_VIDEO": "Устройства на которых есть данное видео",
+    "T_DEVICES_WITHOUT_VIDEO": "Устройства на которых нет данного видео",
+    "T_DEVICE_ALREADY_IMPORTED": "Устройство уже добавлено",
+    "T_DEVICE_VIDEOS": "Видео на устройстве",
+    "T_FREE_SPACE": "Свободное место",
+    "T_HOME": "Главная",
+    "T_LOGIN": "Логин",
+    "T_MAIN_TITLE": "Лечу над миром",
+    "T_MANAGE_VIDEO_ON_DEVICES": "Управлять видео на устройствах",
+    "T_NAME": "Имя",
+    "T_NO_DEVICES": "Нет устройств",
+    "T_NO_TASKS": "Нет задач",
+    "T_PASSWORD": "Пароль",
+    "T_PLAYER_STATUS": "Состояние плеера",
+    "T_PREPARE": "Подготовить",
+    "T_SEARCH_DEVICES": "Поиск устройств",
+    "T_SIGN_IN": "Войти",
+    "T_SIGN_OUT": "Выйти",
+    "T_SUCCESS_LOGIN": "Успешная авторизация",
+    "T_TASKS": "Задачи",
+    "T_UPLOAD_ON_DEVICES": "Загрузить на устройства",
+    "T_VIDEOS": "Магазин",
+    "T_VIDEO_LIBRARY": "Мои видео",
+    "T_VIDEO_UNAVAILABLE": "Видео недоступно"
+  },
+  "enums": {
+    "Cover": "Обложка",
+    "Movie": "Фильм",
+    "Preview": "Предпросмотр"
+  },
+  "errors": {
+    "T_ERROR_LOGIN": "Неправильный логин и/или пароль",
+    "T_FIELDS_ARE_EMPTY": "Поля не заполнены",
+    "T_FORBIDDEN": "Запрещенная операция",
+    "T_NETWROK_ERROR": "Ошибка соединения",
+    "T_NOT_AUTHORIZED": "Пользователь не авторизован",
+    "T_NO_DEVICES_SELECETED": "Устройства не выбраны",
+    "T_SMTH_WENT_WRONG": "Что то пошло не так"
+  }
+}

@@ -1,0 +1,22 @@
+.video-library-item {
+  .MuiCardContent-root {
+    padding-bottom: 5px !important;
+  }
+
+}
+
+.library-item-descirption,
+.device-video-description,
+.shop-item-description {
+  font-size: 10px !important;
+  height: 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.device-video-description {
+  max-width: 280px;
+}

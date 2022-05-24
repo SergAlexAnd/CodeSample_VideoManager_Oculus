@@ -1,0 +1,114 @@
+@use "sass:map";
+$numberOfColumns: 12;
+
+$verticalAlignments: ('start', 'center', 'end');
+
+@function createColumnMap() {
+  $columns: ();
+
+  @for $i from 1 through $numberOfColumns {
+    $newColumn: ($i: calc(#{$i}/#{$numberOfColumns}));
+    $columns: map-merge($columns, $newColumn);
+  }
+
+  @return $columns;
+}
+
+
+@mixin grid-column() {
+
+  @each $columnNumber,
+  $columnWidth in createColumnMap() {
+    .grid-column-#{$columnNumber} {
+      flex-basis: calc(#{$columnWidth} * 100%);
+      max-width: calc(#{$columnWidth} * 100%);
+    }
+  }
+}
+
+@mixin grid-column-offset() {
+
+  @each $columnNumber,
+  $columnWidth in createColumnMap() {
+    .grid-column-offset-#{$columnNumber} {
+      margin-left: calc(#{$columnWidth} * 100%);
+    }
+  }
+}
+
+@mixin verticalAlignmentAttrs($aligment) {
+  display: flex;
+  -webkit-box-align: #{$aligment};
+  -ms-flex-align: #{$aligment};
+}
+
+@mixin verticalAlignment($className) {
+  @each $aligment in $verticalAlignments {
+    .#{$className}-#{$aligment} {
+      @if ($aligment==center) {
+        @include verticalAlignmentAttrs($aligment);
+        align-items: #{$aligment};
+      }
+
+      @else {
+        @include verticalAlignmentAttrs($aligment);
+        align-items: flex-#{$aligment};
+      }
+    }
+  }
+}
+
+@mixin horizontalAlignmentAttrs($aligment) {
+  display: flex;
+  -webkit-box-pack: #{$aligment};
+  -ms-flex-pack: #{$aligment};
+  text-align: #{$aligment};
+}
+
+@mixin horizontalAlignment($className) {
+  @each $aligment in $verticalAlignments {
+    .#{$className}-#{$aligment} {
+      @if ($aligment==center) {
+        @include horizontalAlignmentAttrs($aligment);
+        justify-content: #{$aligment};
+      }
+      @else if $aligment == spaceBetween {
+        @include horizontalAlignmentAttrs($aligment);
+        justify-content: space-between;
+      }
+      @else {
+        @include horizontalAlignmentAttrs($aligment);
+        justify-content: flex-#{$aligment};
+      }
+    }
+  }
+}
+
+@include grid-column();
+@include grid-column-offset();
+@include verticalAlignment(grid-column-vertical);
+@include verticalAlignment(grid-row-vertical);
+@include horizontalAlignment(grid-row-horizontal);
+@include horizontalAlignment(grid-column-horizontal);
+
+.grid {
+  display: block;
+  width: 100%;
+}
+
+.grid-row {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}

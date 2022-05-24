@@ -1,0 +1,25 @@
+:local {
+  .container {
+    overflow: hidden !important;
+    height: 100vh;
+  }
+
+  .innerContainer {
+    padding: 20px;
+    overflow: auto !important;
+    height: 120%;
+    padding-bottom: 300px;
+  }
+
+  .container h2 {
+    font-size: 5rem;
+  }
+
+  .container a {
+    font-size: 1.4rem;
+  }
+
+  .container ol {
+    padding-left: 20px;
+  }
+}

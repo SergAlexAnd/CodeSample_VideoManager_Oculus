@@ -1,0 +1,13 @@
+.searched-device-card {
+  width: 400px;
+  margin-top: 15px;
+}
+
+.added-device-card {
+  width: 100%;
+  margin-top: 15px;
+
+  .MuiCardContent-root {
+    padding-bottom: 19.5px !important;
+  }
+}

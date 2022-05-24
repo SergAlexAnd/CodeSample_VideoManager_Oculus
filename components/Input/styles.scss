@@ -1,0 +1,155 @@
+.square-input {
+  width: 100%;
+  letter-spacing: .1px;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+  padding: 0 15px;
+
+  &.no-border {
+    .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      border: 0;
+    }
+  }
+
+  .MuiOutlinedInput-root {
+    border-radius: 10px;
+  }
+  .MuiFormHelperText-root {
+    position: absolute;
+  }
+
+  &.small.icon {
+    .MuiInputLabel-outlined {
+      transform: translate(38px, 11px) scale(1);
+    }
+  }
+
+  &.small {
+    .MuiOutlinedInput-root {
+      height: 38px;
+    }
+    .MuiInputLabel-outlined {
+      transform: translate(14px, 11px) scale(1);
+      font-size: 14px;
+    }
+    .MuiFormHelperText-root {
+      top: 35px;
+    }
+  }
+
+  &.medium.icon {
+    .MuiInputLabel-outlined {
+      transform: translate(38px, 16px) scale(1);
+    }
+  }
+
+  &.medium {
+    .MuiOutlinedInput-root {
+      height: 48px;
+    }
+    .MuiInputLabel-outlined {
+      transform: translate(14px, 16px) scale(1);
+      font-size: 14px;
+    }
+    .MuiFormHelperText-root {
+      top: 45px;
+    }
+  }
+
+  &.medium.multiline {
+    .MuiOutlinedInput-root {
+      height: auto;
+      overflow: hidden;
+    }
+  }
+  &.small.multiline {
+    .MuiOutlinedInput-root {
+      height: auto;
+      overflow: hidden;
+    }
+  }
+  &.big.multiline {
+    .MuiOutlinedInput-root {
+      height: auto;
+      overflow: hidden;
+    }
+  }
+
+  &.big.icon {
+    .MuiInputLabel-outlined {
+      transform: translate(38px, 22px) scale(1);
+    }
+  }
+
+  &.big {
+    .MuiOutlinedInput-root {
+      height: 58px;
+    } 
+    .MuiInputLabel-outlined {
+      transform: translate(14px, 22px) scale(1);
+      font-size: 15px;
+    }
+    .MuiFormHelperText-root {
+      top: 55px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .square-input {
+    &.small.icon {
+      .MuiInputLabel-outlined {
+        transform: translate(38px, 9px) scale(1);
+      }
+    }
+    &.small {
+      .MuiOutlinedInput-root {
+        height: 36px;
+      }
+      .MuiInputLabel-outlined {
+        transform: translate(14px, 11px) scale(1);
+        font-size: 14px;
+      }
+      .MuiFormHelperText-root {
+        top: 32px;
+      }
+    }
+    &.medium.icon {
+      .MuiInputLabel-outlined {
+        transform: translate(38px, 13px) scale(1);
+      }
+    }
+  
+    &.medium {
+      .MuiOutlinedInput-root {
+        height: 42px;
+      }
+      .MuiInputLabel-outlined {
+        transform: translate(14px, 14px) scale(1);
+        font-size: 14px;
+      }
+      .MuiFormHelperText-root {
+        top: 42px;
+      }
+    }
+    &.big.icon {
+      .MuiInputLabel-outlined {
+        transform: translate(38px, 15px) scale(1);
+      }
+    }
+  
+    &.big {
+      .MuiOutlinedInput-root {
+        height: 48px;
+      } 
+      .MuiInputLabel-outlined {
+        transform: translate(14px, 16px) scale(1);
+        font-size: 15px;
+      }
+      .MuiFormHelperText-root {
+        top: 48px;
+      }
+    }
+  }
+}

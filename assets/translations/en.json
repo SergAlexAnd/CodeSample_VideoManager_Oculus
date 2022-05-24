@@ -1,0 +1,48 @@
+{
+  "translation": {
+    "T_ADD_TO_DEVICE": "Add to devices: ",
+    "T_ADD_TO_LIBRARY": "Add to library",
+    "T_AVAILABLE_VIDEOS": "Available videos",
+    "T_DELETE": "Delete",
+    "T_DESCRIPTION": "Description",
+    "T_DEVICES": "Devices",
+    "T_DEVICES_WITH_VIDEO": "Devices with current video",
+    "T_DEVICES_WITHOUT_VIDEO": "Devices without video",
+    "T_DEVICE_ALREADY_IMPORTED": "Device already imported",
+    "T_DEVICE_VIDEOS": "Device videos",
+    "T_FREE_SPACE": "Free space",
+    "T_HOME": "Home",
+    "T_LOGIN": "Login",
+    "T_MAIN_TITLE": "Flight over the world",
+    "T_MANAGE_VIDEO_ON_DEVICES": "Manage video on devices",
+    "T_NAME": "Name",
+    "T_NO_DEVICES": "No devices",
+    "T_NO_TASKS": "No tasks",
+    "T_PASSWORD": "Password",
+    "T_PLAYER_STATUS": "Player status",
+    "T_PREPARE": "Prepare",
+    "T_SEARCH_DEVICES": "Search devices",
+    "T_SIGN_IN": "Sign In",
+    "T_SIGN_OUT": "Sign Out",
+    "T_SUCCESS_LOGIN": "Success authentication",
+    "T_TASKS": "Tasks",
+    "T_UPLOAD_ON_DEVICES": "Upload on devices",
+    "T_VIDEOS": "Store",
+    "T_VIDEO_LIBRARY": "Local videos",
+    "T_VIDEO_UNAVAILABLE": "Video is unavalilable"
+  },
+  "enums": {
+    "Cover": "Cover",
+    "Movie": "Movie",
+    "Preview": "Preview"
+  },
+  "errors": {
+    "T_ERROR_LOGIN": "Wrong login and/or password",
+    "T_FIELDS_ARE_EMPTY": "Fields are empty",
+    "T_FORBIDDEN": "Forbidden",
+    "T_NETWROK_ERROR": "Network error",
+    "T_NOT_AUTHORIZED": "User is not authorized",
+    "T_NO_DEVICES_SELECETED": "No devices selected",
+    "T_SMTH_WENT_WRONG": "Something went wrong"
+  }
+}

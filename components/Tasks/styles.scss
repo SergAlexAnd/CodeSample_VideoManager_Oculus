@@ -1,0 +1,40 @@
+.task-item-card {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.task-items-container {
+  width: 350px;
+  max-height: 80vh;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.task-items-container::-webkit-scrollbar {
+  display: none;
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.task-items-container__header {
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  padding: 10px 25px;
+  z-index: 100;
+}
+
+.task-items-container__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-items-popover-root {
+  padding: 0 !important;
+
+  .MuiPaper-root {
+    padding: 0 !important;
+  }
+}

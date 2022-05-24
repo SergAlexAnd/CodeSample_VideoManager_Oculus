@@ -1,0 +1,30 @@
+:local {
+  .authFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 64px);
+    flex-direction: column;
+
+    > div {
+      margin-bottom: 20px;
+      width: 40vw;
+    }
+  }
+
+  .button {
+      margin-top: 20px;
+      width: 40vw;
+  }
+
+  .title {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  img {
+    height: 10vw;
+  }
+}
